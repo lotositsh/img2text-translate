@@ -18,3 +18,5 @@ text = pytesseract.image_to_string(img, lang="eng")
 ```
 
 Although the outline is not visible, but it is there, use your imagination. It is best to trace the text diagonally. If anyone can resolve this, let me know
+
+![Example](img.gif)
