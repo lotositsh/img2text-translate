@@ -19,4 +19,18 @@ text = pytesseract.image_to_string(img, lang="eng")
 
 Although the outline is not visible, but it is there, use your imagination. It is best to trace the text diagonally. If anyone can resolve this, let me know
 
+Use hotkey AHK CTRL+Z and kill process after loop run
+```ahk
+^z::
+if (processExist("n3.exe")) {
+    Process, Close, n3.exe
+    Sleep, 1000
+}
+Run, n3.exe
+
+processExist(processName) {
+    Process, Exist, % processName
+    return Errorlevel
+}
+```
 ![Example](img.gif)
